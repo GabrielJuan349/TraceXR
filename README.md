@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://example.com/">
-    <img src="./assets/traceXR-logo.png" alt="Logo" width=72 height=72>
+    <img src="./assets/traceXR-logo.png" alt="Logo" width=150 height=150>
   </a>
 
   <h3 align="center">TraceXR</h3>
@@ -71,6 +71,7 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
  **Gabriel Juan**
   - GitHub: [@GabrielJuan349](https://github.com/GabrielJuan349)
   - LinkedIn: [in/gabi-juan](https://www.linkedin.com/in/gabi-juan)
+
 **Jan Gras**
   - GitHub: [@JG03dev](https://github.com/JG03dev)
   - LinkedIn: [in/jangras](https://www.linkedin.com/in/jangras/)
