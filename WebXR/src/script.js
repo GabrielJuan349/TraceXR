@@ -14,18 +14,10 @@ let gamepad1;
 let isDrawing = false;
 let prevIsDrawing = false;
 
-// Remove the existing material declaration and replace with:
-let currentColor = new THREE.Color(0xff0000); // Start with red
-
-// Create a function to generate new material with a color
-function createStrokeMaterial(color) {
-  return new THREE.MeshStandardMaterial({
-    color: color,
-    roughness: 0.4,
-    metalness: 0.1,
-    side: THREE.DoubleSide
-  });
-}
+const material = new THREE.MeshNormalMaterial({
+  flatShading: true,
+  side: THREE.DoubleSide,
+});
 
 const cursor = new THREE.Vector3();
 
@@ -59,8 +51,9 @@ function init() {
   scene.add(light);
 
   painter1 = new TubePainter();
-  painter1.mesh.material = createStrokeMaterial(currentColor);
+  painter1.mesh.material = material;
   painter1.setSize(0.1);
+
   scene.add(painter1.mesh);
 
   renderer = new THREE.WebGLRenderer({ antialias: true, canvas });
