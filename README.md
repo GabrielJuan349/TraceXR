@@ -1,10 +1,6 @@
-# TraceXR
-LauzHack Challenge mixing Vitol, Logitech, AWS and AXA Challenges
-
-
 <p align="center">
   <a href="https://example.com/">
-    <img src="https://via.placeholder.com/72" alt="Logo" width=72 height=72>
+    <img src="./assets/traceXR-logo.png" alt="Logo" width=72 height=72>
   </a>
 
   <h3 align="center">TraceXR</h3>
@@ -41,7 +37,7 @@ Some text
 
 ## Status
 
-Here goes all the budgets
+During the LauzHack is in development
 
 ## What's included
 
@@ -72,9 +68,20 @@ Editor preferences are available in the [editor config](https://reponame/blob/ma
 
 ## Creators
 
-**Creator 1**
+ **Gabriel Juan**
+  - GitHub: [@GabrielJuan349](https://github.com/GabrielJuan349)
+  - LinkedIn: [in/gabi-juan](https://www.linkedin.com/in/gabi-juan)
+**Jan Gras**
+  - GitHub: [@JG03dev](https://github.com/JG03dev)
+  - LinkedIn: [in/jangras](https://www.linkedin.com/in/jangras/)
 
-- <https://github.com/usernamecreator1>
+**Yeray Cordero**
+  - GitHub: [@yeray142](https://github.com/yeray142)
+  - LinkedIn: [in/yeray142](https://www.linkedin.com/in/yeray142/)
+
+**Nikalas Boyanov**
+  - GitHub: [@finnithegamer](https://github.com/finnithegamer)
+  - LinkedIn: [in/nikalas-boyanov-nunev](https://www.linkedin.com/in/nikalas-boyanov-nunev)
 
 ## Thanks
 
