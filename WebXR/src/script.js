@@ -82,6 +82,50 @@ function init() {
   controllerGrip2.add(controllerModelFactory.createControllerModel(controllerGrip2));
   scene.add(controllerGrip2);
   scene.add(controller2);
+
+  //Codigo para el canvas en 2D------
+  // Agregar un canvas 2D para dibujo
+const drawingCanvas = document.createElement("canvas");
+drawingCanvas.classList.add("drawing-canvas");
+document.body.appendChild(drawingCanvas);
+
+// Configuración inicial del canvas 2D
+const drawingCtx = drawingCanvas.getContext("2d");
+drawingCanvas.width = window.innerWidth;
+drawingCanvas.height = window.innerHeight;
+/*
+// Variables para dibujar
+let isDrawing2D = false;
+let lastX = 0;
+let lastY = 0;
+
+// Funciones de dibujo
+function startDrawing2D(e) {
+  isDrawing2D = true;
+  const { offsetX, offsetY } = getCanvasCoordinates(e);
+  [lastX, lastY] = [offsetX, offsetY];
+}
+
+function draw2D(e) {
+  if (!isDrawing2D) return;
+  const { offsetX, offsetY } = getCanvasCoordinates(e);
+
+  drawingCtx.strokeStyle = "red"; // Color del pincel
+  drawingCtx.lineWidth = 5; // Grosor del pincel
+  drawingCtx.lineJoin = "round";
+  drawingCtx.lineCap = "round";
+
+  drawingCtx.beginPath();
+  drawingCtx.moveTo(lastX, lastY);
+  drawingCtx.lineTo(offsetX, offsetY);
+  drawingCtx.stroke();
+  [lastX, lastY] = [offsetX, offsetY];
+}
+
+function stopDrawing2D() {
+  isDrawing2D = false;
+  drawingCtx.beginPath(); // Limpia el path actual
+}*/
 }
 
 window.addEventListener("resize", () => {
@@ -126,6 +170,7 @@ function handleDrawing(controller) {
     cursor.set(stylus.position.x, stylus.position.y, stylus.position.z);
 
     if (userData.isSelecting || isDrawing) {
+
       painter.lineTo(cursor);
       painter.update();
     }
