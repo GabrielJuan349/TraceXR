@@ -37,7 +37,7 @@ You can find our ONNX model for EfficientNet B7 trained on TU-Berlin Sketch data
 
 This project combines multiple challenges from LauzHack of EPFL, Switzerland, which are proposed by companies such as AXA Group (an Artificial Intelligence model that can run on a laptop, mobile device, or immersive device), Logitech (using the MX Ink together with the Meta Quest 3/3S to create a Mixed Reality (XR) application), and primarily Vitol (creating an AI service for recognizing static and moving objects and/or a chatbot capable of interacting with the user).
 
-As shown in the image below, this project is a multi-agent AI system combining Speech-To-Text with OpenAI Whisper for multi-agent routing and generating written responses when necessary using Qwen2.5-0.5b. It also utilizes YoLov11 for object detection in images, an EfficientNet-B7 for recognizing patterns or drawings made with the MX Ink, and finally, OpenAI TTS for Text-to-Speech.
+As shown in the image below, this project is a multi-agent AI system combining Speech-To-Text with OpenAI Whisper for multi-agent routing and generating written responses when necessary using [Qwen2.5-0.5b](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF). It also utilizes YoLov11 for object detection in images, an EfficientNet-B7 for recognizing patterns or drawings made with the MX Ink, and finally, OpenAI TTS for Text-to-Speech.
 
 <img src="./assets/Multi-Agent Graph.png" alt="Multi Agent Architecture" width=100% height=225>
 
