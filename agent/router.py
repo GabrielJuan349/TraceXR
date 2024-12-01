@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import onnxruntime as ort
 import numpy as np
-
+from image_prepros import ImageClassifier 
 
 class QwenRouter:
     _classes = []
@@ -28,12 +28,11 @@ class QwenRouter:
     def handle_tracking(self, query: str) -> np.array:
         return f"Tracking Objects..."
 
-    def handle_draw(self,data ) -> str:
+    def handle_draw(self,image_url ) -> str:
         try:
-            x,y = data,data[1]
             ort_sess = ort.InferenceSession(os.getenv("ONNX_MODEL_PATH"))
-            outputs = ort_sess.run(None, {'input': x.numpy()})
-            return y[outputs[0][0].argmax(0)]
+            ic = ImageClassifier(ort_sess, os.getenv("LABEL_MAPPING_FILE"))
+            return ic.classify_image(image_url)
         except Exception as e:
             return f"Error ejecutando comando: {str(e)}"
 
