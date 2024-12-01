@@ -29,11 +29,8 @@
 
 ## Quick start
 
-Some text
-
-- Instruction 1
-- Instruction 2
-- Instruction 3
+### Model download - ONNX format
+You can find our ONNX model for EfficientNet B7 trained on TU-Berlin Sketch dataset in [Google Drive](https://drive.google.com/file/d/1s6j8zwpggz0hqwEiRSArXn19FGD4639y/view?usp=sharing).
 
 ## Status
 
