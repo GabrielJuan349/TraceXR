@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://example.com/">
+  <a href="https://github.com/GabrielJuan349/TraceXR/">
     <img src="./assets/traceXR-logo.png" alt="Logo" width=150 height=150>
   </a>
 
@@ -8,9 +8,9 @@
   <p align="center">
     Meta Quest application for Vitol challenge to track and recognize objects and patterns in Mixed Reality.
     <br>
-    <a href="https://reponame/issues/new?template=bug.md">Report bug</a>
+    <a href="https://github.com/GabrielJuan349/TraceXR/issues/new?template=bug.md">Report bug</a>
     ·
-    <a href="https://reponame/issues/new?template=feature.md&labels=feature">Request feature</a>
+    <a href="https://github.com/GabrielJuan349/TraceXR/issues/new?template=feature.md&labels=feature">Request feature</a>
   </p>
 </p>
 
@@ -37,7 +37,7 @@ You can find our ONNX model for EfficientNet B7 trained on TU-Berlin Sketch data
 
 This project combines multiple challenges from [LauzHack](https://lauzhack.com/) of [EPFL, Switzerland](https://www.epfl.ch/en/), which are proposed by companies such as [AXA Group](https://axa.com/) (an Artificial Intelligence model that can run on a laptop, mobile device, or immersive device), [Logitech](https://www.logitech.com/) (using the [MX Ink](https://www.logitech.com/es-es/products/vr/mx-ink.html) together with the [Meta Quest 3/3S](https://www.meta.com/ch/en/quest/quest-3/) to create a Mixed Reality (XR) application), and primarily [Vitol](https://www.vitol.com/) (creating an AI service for recognizing static and moving objects and/or a chatbot capable of interacting with the user).
 
-As shown in the image below, this project is a multi-agent AI system combining Speech-To-Text with OpenAI Whisper for multi-agent routing and generating written responses when necessary using [Qwen2.5-0.5b](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF). It also utilizes [YoLo11](https://github.com/ultralytics/ultralytics) for object detection in images, an [EfficientNet-B7](https://pytorch.org/vision/main/models/efficientnet.html) ([Arxiv](https://arxiv.org/pdf/1905.11946)) for recognizing patterns or drawings made with the MX Ink, and finally, OpenAI TTS for Text-to-Speech.
+As shown in the image below, this project is a multi-agent AI system combining Speech-To-Text with [OpenAI Whisper](https://openai.com/index/whisper/) for multi-agent routing and generating written responses when necessary using [Qwen2.5-0.5b](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF). It also utilizes [YoLo11](https://github.com/ultralytics/ultralytics) for object detection in images, an [EfficientNet-B7](https://pytorch.org/vision/main/models/efficientnet.html) ([Arxiv](https://arxiv.org/pdf/1905.11946)) for recognizing patterns or drawings made with the MX Ink, and finally, [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) for Text-to-Speech.
 
 <img src="./assets/Multi-Agent Graph.png" alt="Multi Agent Architecture" width=100% height=225>
 
