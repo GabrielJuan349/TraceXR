@@ -1,35 +1,37 @@
-name: Deploy to GitHub Pages
+name: Deploy WebXR to GitHub Pages
 
 on:
   push:
     branches:
-      - Unity # Replace with your default branch if it's not `main`
-
+      - main  # or master, depending on your default branch name
+permissions:
+  contents: write
+  
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      # Step 1: Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      # Step 2: Set up Node.js
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '16' # Use the version your project requires
+          node-version: '20'
+          cache: 'npm'
 
-      # Step 3: Navigate to the WebXR folder, install dependencies, and build
-      - name: Install dependencies and build
-        run: |
-          cd WebXR
-          npm install
-          npm run build
+      - name: Install dependencies
+        working-directory: ./WebXR
+        run: npm install
 
-      # Step 4: Deploy to GitHub Pages
+      - name: Build project
+        working-directory: ./WebXR
+        run: npm run build
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./WebXR/dist
+          folder: WebXR/dist  # Updated path to the dist folder
+          branch: gh-pages
+          clean: true
