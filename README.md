@@ -39,7 +39,7 @@ This project combines multiple challenges from LauzHack of EPFL, Switzerland, wh
 
 As shown in the image below, this project is a multi-agent AI system combining Speech-To-Text with OpenAI Whisper for multi-agent routing and generating written responses when necessary using Qwen2.5-0.5b. It also utilizes YoLov11 for object detection in images, an EfficientNet-B7 for recognizing patterns or drawings made with the MX Ink, and finally, OpenAI TTS for Text-to-Speech.
 
-<img src="./assets/Multi-Agent Graph.png" alt="Logo" width=100% height=175>
+<img src="./assets/Multi-Agent Graph.png" alt="Multi Agent Architecture" width=100% height=175>
 
 The implementation within the Meta Quest has been done using WebXR. For more information... [WebXR]( https://github.com/JG03dev/WebXR)
 
