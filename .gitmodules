@@ -1,3 +1,6 @@
 [submodule "WebXR"]
 	path = WebXR
 	url = https://github.com/JG03dev/WebXR.git
+[submodule "WebXR-server"]
+	path = WebXR-server
+	url = https://github.com/JG03dev/WebXR-server.git
