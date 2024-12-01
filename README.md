@@ -41,14 +41,22 @@ During the LauzHack is in development
 Some text
 
 ```text
-folder1/
-└── folder2/
-    ├── folder3/
-    │   ├── file1
-    │   └── file2
-    └── folder4/
-        ├── file3
-        └── file4
+agent-src/
+│  ├── agent/
+│  │    ├── image_prepos.py
+│  │    ├── router.py
+│  │    └── main.py
+│  └── data-models/
+│       ├── label_mapping.pkl
+│       └── efficientnet_b7.onnx
+├── models/
+│    ├──efficient_net_b7.ipynb
+│    ├──mobile_net.ipynb
+│    └──yolov8.ipynb
+├── assets/
+├── examples/
+├── .env.example
+├── requirements.txt
 ```
 
 ## Bugs and feature requests
@@ -87,6 +95,6 @@ Some Text
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
+Code and documentation copyright 2024-2036 the authors. Code released under the [MIT License](https://reponame/blob/master/LICENSE).
 
 Enjoy :metal:
